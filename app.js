@@ -43,9 +43,7 @@ function convert() {
             if ( ajax.status === 200 && fromInput.value !== toInput.value)  {
                 resolve(JSON.parse(ajax.responseText));
             } else if (fromInput.value === toInput.value) {
-                const obj = {
-                    rates: {}
-                };     
+                const obj = {rates: {}};     
                 obj.rates[fromInput.value] = amountInput.value;
                 resolve(obj)
             } else {
@@ -83,15 +81,15 @@ currencies
     })
 
 
-
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     
     convert()
         .then( response => {
             result.textContent = response.rates[toInput.value];
-            // console.log(response);
+            amountInput.value = '';
         } )
         .catch( error => {throw new Error(error)} )
+
 
 })
