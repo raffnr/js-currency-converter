@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#main-heading {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.container {
+    border: 2px solid black;
+    padding: 1.5rem;
+    text-align: center;
+    max-width: 768px;
+    margin: 2rem auto;
+    border-radius: 1rem;
+}
+
+.result {
+    border: 1px solid black;
+    width: 50%;
+    margin: 0 auto;
+    padding: 1rem 0;
+    border-radius: 8px;
+}
+
+form {
+    margin-top:3rem;
+    /* background-color: cadetblue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    /* width: 30%; */
+    height: 2rem;
+    margin-top: 1px;
+    text-align: center;
+}
+
+.convert-btn {
+    margin-top: 2rem;
+    padding: 0.5rem 2rem;
+    border: 1px solid black;
+    border-radius: 6px;
+}
+
+
+
