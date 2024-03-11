@@ -90,6 +90,4 @@ form.addEventListener('submit', (e) => {
             amountInput.value = '';
         } )
         .catch( error => {throw new Error(error)} )
-
-
 })
